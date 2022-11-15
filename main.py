@@ -34,8 +34,8 @@ async def on_member_join(member: discord.Member):
         return
 
     join_output = [
-      f"kon! welcome {member} to the hyper bubble! everyone say hi to them, kon!",
-      f"kon! {member} has crashed to the bubble! come and say hi, kon!"
+      f"kon! welcome {member.mention} to the hyper bubble! everyone say hi to them, kon!",
+      f"kon! {member.mention} has crashed to the bubble! come and say hi, kon!"
     ]
     await channel.send(random.choice(join_output))
 
@@ -50,8 +50,8 @@ async def on_member_remove(member: discord.Member):
         return
 
     leave_output = [
-      f"kon! {member} has figured out the way out the bubble! safe travels, kon!",
-      f"kon! me might have accidentally popped {member} out of the bubble, hecc!"
+      f"kon! {member.mention} has figured out the way out the bubble! safe travels, kon!",
+      f"kon! me might have accidentally popped {member.mention} out of the bubble, hecc!"
     ]
     await channel.send(random.choice(leave_output))
 
