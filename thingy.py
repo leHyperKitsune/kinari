@@ -1,1 +1,0 @@
-kinari_token = "MTAzNTQyMTEwNzM5OTk2MjY3NQ.G_rBdE.6WthlXVisk1CjNRt-vmCcYfhdw1VTa4w_taQbM"
