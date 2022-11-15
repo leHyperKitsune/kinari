@@ -1,0 +1,15 @@
+if any(word in input for word in tuple(input.input)):
+    await message.channel.send(random.choice(output.output))
+    return
+
+spoopy text
+
+me dont
+
+
+
+can me move this on my desktop
+so git doesnt care if me move it
+
+so do me open this in vscode
+so it be easier??? hecc
