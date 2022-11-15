@@ -52,7 +52,7 @@ async def on_member_remove(member):
 
 @client.event
 # yes this is for kinari's brain me gonna make konmand thingies, kon!
-async def on_message(message):
+async def on_message(message: discord.Message):
 
     kinari_input = message.content.lower()
 
@@ -142,8 +142,8 @@ async def on_message(message):
         await message.channel.send(random.choice(cute.output))
         return
 
-    if any(word in kinari_input for word in tuple(who_cute.input)):
-        await message.channel.send(random.choice(who_cute.output))
+    if any(word in kinari_input for word in who_cute.kinput):
+        await message.channel.send(who_cute.koutput(message))
         return
 
     if any(word in kinari_input for word in tuple(fortnite.input)):
