@@ -279,4 +279,4 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,python
 
 # nothing casual here - srsly me dont know hecc about git
-thingy.py
+/thingy.py
