@@ -27,8 +27,7 @@ async def on_ready():
 @client.event
 # le join message, kon!
 async def on_member_join(member: discord.Member):
-    welcome = 969908520612929566
-    channel = client.get_channel(welcome)
+    channel = client.get_channel(thingy.bubble_welcome)
 
     if channel.guild != member.guild:
         return
@@ -43,8 +42,7 @@ async def on_member_join(member: discord.Member):
 @client.event
 # on leave message, kon!
 async def on_member_remove(member: discord.Member):
-    welcome = 969908520612929566
-    channel = client.get_channel(welcome)
+    channel = client.get_channel(thingy.bubble_welcome)
 
     if channel.guild != member.guild:
         return
@@ -150,8 +148,8 @@ async def on_message(message: discord.Message):
         await message.channel.send(random.choice(cute.output))
         return
 
-    if any(word in kinari_input for word in who_cute.kinput):
-        await message.channel.send(who_cute.koutput(message))
+    if any(word in kinari_input for word in who_cute.kdictin_who_cute):
+        await message.channel.send(who_cute.who_cute(message))
         return
 
     if any(word in kinari_input for word in tuple(fortnite.input)):

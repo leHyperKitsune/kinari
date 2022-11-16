@@ -280,3 +280,5 @@ cython_debug/
 
 # nothing casual here - srsly me dont know hecc about git
 /thingy.py
+/desktop.ini
+/kinari_icon.ico

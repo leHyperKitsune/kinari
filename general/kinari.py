@@ -3,8 +3,8 @@ input = [
 ]
 
 output = [
-  "yep that me, kon!",
-  "yea that me, kon!",
-  "kon?",
-  "u, kon!"
+  "yep that me, kon! <:thingy:1036519788106743808>",
+  "yea that me, kon! <:thingy:1036519788106743808>",
+  "kon? <:thingy:1036519432257806336>",
+  "u, kon! <:thingy:1036519788106743808>"
 ]
