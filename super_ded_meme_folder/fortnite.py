@@ -1,5 +1,5 @@
 input = [
-"kinari meme fortnite",
+"kinari super_ded_meme_folder fortnite",
 "fortnite"
 ]
 

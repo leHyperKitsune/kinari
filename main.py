@@ -5,11 +5,11 @@ import random
 
 # thingies from here
 import thingy
+import meme
 from general import kon, hi, hru, gm, ga, ge, gn, ty, np, kinari
 from support import sad
 from random_tools import coin, d20, dice, fortune, le8ball, truth
 from emotion import compliment
-from meme import cute, who_cute, fortnite, jazzy
 
 # thx discord for making this hecc hard
 intent = discord.Intents.default()
@@ -144,20 +144,24 @@ async def on_message(message: discord.Message):
         return
 
     # meme thingies ----------------------------------------------
-    if any(word in kinari_input for word in tuple(cute.input)):
-        await message.channel.send(random.choice(cute.output))
+    if any(word in kinari_input for word in meme.input_cute):
+        await message.channel.send(meme.cute())
         return
 
-    if any(word in kinari_input for word in who_cute.kdictin_who_cute):
-        await message.channel.send(who_cute.who_cute(message))
+    if any(word in kinari_input for word in meme.input_who_cute):
+        await message.channel.send(meme.who_cute(message))
         return
 
-    if any(word in kinari_input for word in tuple(fortnite.input)):
-        await message.channel.send(random.choice(fortnite.output))
+    if any(word in kinari_input for word in meme.input_fortnite):
+        await message.channel.send(meme.fortnite())
         return
 
-    if any(word in kinari_input for word in tuple(jazzy.input)):
-        await message.channel.send(random.choice(jazzy.output))
+    if any(word in kinari_input for word in meme.input_who_small):
+        await message.channel.send(meme.who_small(message))
+        return
+
+    if any(word in kinari_input for word in meme.input_incredible):
+        await message.channel.send(meme.incredible())
         return
 
 

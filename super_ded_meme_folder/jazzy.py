@@ -1,5 +1,5 @@
 input = [
-  "kinari meme jazzy",
+  "kinari super_ded_meme_folder jazzy",
   "kinari who is small", "kinari, who is small",
   "kinari who small", "kinari, who small",
   "kinari who is smol", "kinari, who is smol",
